@@ -1,0 +1,9 @@
+.bodyBackground{
+    background: url('/dist/img/background.jpg') fixed no-repeat;
+}
+
+.login-logo{ color: rgb(255, 255, 255);
+            font-weight: 300;
+
+
+}
