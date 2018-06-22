@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="../../plugins/datatables/dataTables.bootstrap4.css">    
   <!-- Theme style -->
   <link rel="stylesheet" href="dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
@@ -210,7 +212,7 @@
       <!-- Default box -->
       <div class="card">
         <div class="card-header">
-          <h3 class="card-title">Termékek listája</h3>
+          <h3 class="card-title">Használt autóink listája</h3>
 
           <div class="card-tools">
             <button type="button" class="btn btn-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
@@ -221,28 +223,249 @@
         </div>
         <div 
         class="card-body">
-          <div 
-          class="table">
-            <table 
-            class="table">
+        <table id="myproduct" class="table table-bordered table-hover">
               <thead>
                 <tr>
-                  <th></th>
-                  <th></th>
-                  <th></th>
-                  <th></th>
-                  <th></th>
+                  <th>ID</th>
+                  <th>Gyártó</th>
+                  <th>Típus</th>
+                  <th>Rendszám</th>
+                  <th>Származási hely</th>
+                  <th>Évjárat</th>
+                  <th>Bruttó ár</th>
                 </tr>
               </thead>
+              <tbody>
+                <tr>
+                  <td>001</td>
+                  <td>Volkswagen</td>
+                  <td>Golf</td>
+                  <td>GHF-199</td>
+                  <td>Németország</td>
+                  <td>2014</td>
+                  <td>4.990.000</td>
+                </tr>
+                <tr>
+                  <td>002</td>
+                  <td>Opel</td>
+                  <td>Astra</td>
+                  <td>LHF-554</td>
+                  <td>Németország</td>
+                  <td>2010</td>
+                  <td>2.190.000</td>
+                </tr>
+                <tr>
+                  <td>003</td>
+                  <td>Renault</td>
+                  <td>Clio</td>
+                  <td>FZU-347</td>
+                  <td>Franciaország</td>
+                  <td>2006</td>
+                  <td>1.090.000</td>
+                </tr>
+                <tr>
+                  <td>004</td>
+                  <td>Fiat</td>
+                  <td>500</td>
+                  <td>MFE-275</td>
+                  <td>Olaszország</td>
+                  <td>2013</td>
+                  <td>1.890.000</td>
+                </tr>
+                <tr>
+                  <td>005</td>
+                  <td>Ford</td>
+                  <td>Focus</td>
+                  <td>IRR-126</td>
+                  <td>USA</td>
+                  <td>2012</td>
+                  <td>2.390.000</td>
+                </tr>
+                <tr>
+                  <td>006</td>
+                  <td>Skoda</td>
+                  <td>Octavia</td>
+                  <td>FEH-257</td>
+                  <td>Csehország</td>
+                  <td>2010</td>
+                  <td>1.990.000</td>
+                </tr>
+                <tr>
+                  <td>007</td>
+                  <td>Toyota</td>
+                  <td>Prius</td>
+                  <td>NRT-932</td>
+                  <td>Japán</td>
+                  <td>2016</td>
+                  <td>4.990.000</td>
+                </tr>
+                <tr>
+                  <td>008</td>
+                  <td>Lexus</td>
+                  <td>CH-250</td>
+                  <td>LFU-491</td>
+                  <td>Japán</td>
+                  <td>2015</td>
+                  <td>3.890.000</td>
+                </tr>
+                <tr>
+                  <td>009</td>
+                  <td>Audi</td>
+                  <td>A6</td>
+                  <td>GUZ-276</td>
+                  <td>Németország</td>
+                  <td>2014</td>
+                  <td>3.190.000</td>
+                </tr>
+                <tr>
+                  <td>010</td>
+                  <td>BMW</td>
+                  <td>i3</td>
+                  <td>MEZ-024</td>
+                  <td>Németország</td>
+                  <td>2015</td>
+                  <td>6.490.000</td>
+                </tr>
+                <tr>
+                  <td>011</td>
+                  <td>Nissan</td>
+                  <td>Leaf</td>
+                  <td>NLE-991</td>
+                  <td>Japán</td>
+                  <td>2015</td>
+                  <td>3.990.000</td>
+                </tr>
+                <tr>
+                  <td>012</td>
+                  <td>Volkswagen</td>
+                  <td>Sharan</td>
+                  <td>EHJ-702</td>
+                  <td>Németország</td>
+                  <td>2009</td>
+                  <td>1.790.000</td>
+                </tr>
+                <tr>
+                  <td>013</td>
+                  <td>Kia</td>
+                  <td>Ceed</td>
+                  <td>GLE-580</td>
+                  <td>Dél-Korea</td>
+                  <td>2011</td>
+                  <td>1.890.000</td>
+                </tr>
+                <tr>
+                  <td>014</td>
+                  <td>Mitsubishi</td>
+                  <td>Lancer</td>
+                  <td>FEU-259</td>
+                  <td>Japán</td>
+                  <td>2008</td>
+                  <td>1.390.000</td>
+                </tr>
+                <tr>
+                  <td>015</td>
+                  <td>Opel</td>
+                  <td>Ampera</td>
+                  <td>LEI-480</td>
+                  <td>Németország</td>
+                  <td>2017</td>
+                  <td>5.290.000</td>
+                </tr>
+                <tr>
+                  <td>016</td>
+                  <td>Audi</td>
+                  <td>A3</td>
+                  <td>EHJ-759</td>
+                  <td>Németország</td>
+                  <td>2012</td>
+                  <td>2.190.000</td>
+                </tr>
+                <tr>
+                  <td>017</td>
+                  <td>Suzuki</td>
+                  <td>Vitara</td>
+                  <td>DHU-190</td>
+                  <td>Japán</td>
+                  <td>2006</td>
+                  <td>1.090.000</td>
+                </tr>
+                <tr>
+                  <td>018</td>
+                  <td>Mercedes</td>
+                  <td>AMG</td>
+                  <td>KEZ-418</td>
+                  <td>Németország</td>
+                  <td>2015</td>
+                  <td>3.990.000</td>
+                </tr>
+                <tr>
+                  <td>019</td>
+                  <td>Ford</td>
+                  <td>Fiesta</td>
+                  <td>JED-509</td>
+                  <td>USA</td>
+                  <td>2004</td>
+                  <td>1.190.000</td>
+                </tr>
+                <tr>
+                  <td>020</td>
+                  <td>Toyota</td>
+                  <td>Auris</td>
+                  <td>HUR-583</td>
+                  <td>Japán</td>
+                  <td>2013</td>
+                  <td>1.790.000</td>
+                </tr>
+                <tr>
+                  <td>021</td>
+                  <td>Peugeot</td>
+                  <td>507</td>
+                  <td>KWR-371</td>
+                  <td>Franciaország</td>
+                  <td>2012</td>
+                  <td>1.790.000</td>
+                </tr>
+                <tr>
+                  <td>022</td>
+                  <td>Honda</td>
+                  <td>Civic</td>
+                  <td>EAL-380</td>
+                  <td>Japán</td>
+                  <td>2009</td>
+                  <td>1.290.000</td>
+                </tr>
+                <tr>
+                  <td>023</td>
+                  <td>Porsche</td>
+                  <td>911 Carrera</td>
+                  <td>JUK-911</td>
+                  <td>Németország</td>
+                  <td>2014</td>
+                  <td>8.890.000</td>
+                </tr>
+                <tr>
+                  <td>024</td>
+                  <td>Hyundai</td>
+                  <td>i30</td>
+                  <td>KQP-491</td>
+                  <td>Dél-Korea</td>
+                  <td>2016</td>
+                  <td>3.990.000</td>
+                </tr>
+                <tr>
+                  <td>025</td>
+                  <td>Volvo</td>
+                  <td>XC90</td>
+                  <td>EOP-993</td>
+                  <td>Svédország</td>
+                  <td>2014</td>
+                  <td>3.490.000</td>
+                </tr>
+              </tbody>
             </table>
-
           </div>
         </div>
         <!-- /.card-body -->
-        <div class="card-footer">
-          Ha szükség van az egyéni tartalomhoz láblécre, akkor az ez. Egyébként törölhető ez a div.
-        </div>
-        <!-- /.card-footer-->
       </div>
       <!-- /.card -->
 
@@ -271,6 +494,9 @@
 <script src="plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
 <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- DataTables -->
+<script src="plugins/datatables/jquery.dataTables.js"></script>
+<script src="plugins/datatables/dataTables.bootstrap4.js"></script>
 <!-- SlimScroll -->
 <script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->
@@ -279,5 +505,11 @@
 <script src="dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="dist/js/demo.js"></script>
+<!-- page script -->
+<script>
+  $(function () {
+    $("#myproduct").DataTable();
+  });
+</script>
 </body>
 </html>
