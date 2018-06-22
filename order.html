@@ -111,6 +111,19 @@
           <a href="#" class="dropdown-item dropdown-footer">Tovább az összes értesítéshez</a>
         </div>
       </li>
+
+      <!-- Logout Dropdown Menu -->
+      <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="fa fa-power-off "></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">     
+  
+            <div class="dropdown-divider"></div>
+            <a href="login.html#" class="dropdown-item dropdown-footer">Kijelentkezés</a>
+          </div>
+        </li>      
+
       <li class="nav-item">
         <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#">
           <i class="fa fa-th-large"></i>
@@ -178,13 +191,7 @@
                   </p>
                 </a>
               </li> 
-              <li class="nav-item">
-                <a href="login.html" class="nav-link">
-                  <i class="fa fa-key nav-icon"></i>
-                  <p>Belépés
-                  </p>
-                </a>
-              </li>                          
+                          
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -218,7 +225,6 @@
       <div class="card">
         <div class="card-header">
           <h3 class="card-title">Rendelések áttekintése</h3>
-
           <div class="card-tools">
             <button type="button" class="btn btn-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
               <i class="fa fa-minus"></i></button>
@@ -239,7 +245,7 @@
                       <i class="fa fa-shopping-cart"></i>
                     </div>
                     <a href="#" class="small-box-footer">
-                      More info <i class="fa fa-arrow-circle-right"></i>
+                      Törlés <i class="fa fa-trash-o"></i>
                     </a>
                   </div>
                 </div>
@@ -255,7 +261,7 @@
                             <i class="fa fa-shopping-cart"></i>
                           </div>
                           <a href="#" class="small-box-footer">
-                            More info <i class="fa fa-arrow-circle-right"></i>
+                            Törlés <i class="fa fa-trash-o"></i>
                           </a>
                         </div>
                       </div>
@@ -270,8 +276,8 @@
                                 <div class="icon">
                                   <i class="fa fa-shopping-cart"></i>
                                 </div>
-                                                          <a href="#" class="small-box-footer">
-                            More info <i class="fa fa-arrow-circle-right"></i>
+                          <a href="#" class="small-box-footer">
+                            Törlés <i class="fa fa-trash-o"></i>
                           </a>
                               </div>
                             </div>
@@ -280,6 +286,15 @@
         </div>
         <!-- /.card-body -->
       </div>
+      <div class="card-footer">
+        <div class="btn-group">
+        <button type="button" class="btn btn-block btn-success btn-lg">Rendelés leadása <span><i class="fa fa-cart-plus"></i></span></button>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-block btn-danger btn-lg">Rendelés törlése <span><i class="fa fa-trash-o"></i></span></button>
+        </div>
+      </div>
+      <!-- /.card-footer-->
       <!-- /.card -->
 
     </section>
