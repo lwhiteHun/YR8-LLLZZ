@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="../../plugins/datatables/dataTables.bootstrap4.css">      
   <!-- Theme style -->
   <link rel="stylesheet" href="dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
@@ -42,6 +44,7 @@
 
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
+
       <!-- Messages Dropdown Menu -->
       <li class="nav-item dropdown">
         <a class="nav-link" data-toggle="dropdown" href="#">
@@ -111,6 +114,20 @@
           <a href="#" class="dropdown-item dropdown-footer">Tovább az összes értesítéshez</a>
         </div>
       </li>
+
+      <!-- Logout Dropdown Menu -->
+      <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="fa fa-power-off "></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">     
+  
+            <div class="dropdown-divider"></div>
+            <a href="login.html#" class="dropdown-item dropdown-footer">Kijelentkezés</a>
+          </div>
+        </li>      
+
+
       <li class="nav-item">
         <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#">
           <i class="fa fa-th-large"></i>
@@ -125,10 +142,10 @@
     <!-- Brand Logo -->
     <a href="index.html" class="brand-link">
       <img src="dist/img/AdminLTELogo.png"
-           alt="admin-LLLZZ"
+           alt="adminLLLZZ"
            class="brand-image img-circle elevation-3"
            style="opacity: .8">
-      <span class="brand-text font-weight-light">admin-LLLZZ</span>
+      <span class="brand-text font-weight-light">admin<b>LLLZZ</b></span>
     </a>
 
     <!-- Sidebar -->
@@ -158,7 +175,7 @@
                 <a href="costumer.html" class="nav-link">
                   <i class="fa fa-users nav-icon"></i>
                   <p>Vásárlók
-                      <span class="right badge badge-info">7</span>
+                      <span class="right badge badge-info">16</span>
                   </p>
                 </a>
               </li>
@@ -178,13 +195,7 @@
                   </p>
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="login.html" class="nav-link">
-                  <i class="fa fa-key nav-icon"></i>
-                  <p>Belépés
-                  </p>
-                </a>
-              </li>                          
+                          
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -227,8 +238,7 @@
           </div>
         </div>
         <div class="card-body">
-          <div class = "table">
-            <table class = "table">
+            <table id="myproduct" class="table table-bordered table-hover">
                     <thead>
                             <tr>
                                     <th>ID</th>
@@ -385,7 +395,6 @@
                                     <td>Budapest</td>
                                     <td>Trend Bt.</td>
                             </tr>
-    
                     </tbody>
             </table>
         </div>
@@ -419,6 +428,9 @@
 <script src="plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
 <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- DataTables -->
+<script src="plugins/datatables/jquery.dataTables.js"></script>
+<script src="plugins/datatables/dataTables.bootstrap4.js"></script>
 <!-- SlimScroll -->
 <script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->
@@ -427,5 +439,11 @@
 <script src="dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="dist/js/demo.js"></script>
+<!-- page script -->
+<script>
+  $(function () {
+    $("#myproduct").DataTable();
+  });
+</script>
 </body>
 </html>
