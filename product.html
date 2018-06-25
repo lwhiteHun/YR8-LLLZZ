@@ -527,7 +527,11 @@
 <!-- page script -->
 <script>
   $(function () {
-    $("#myproduct").DataTable();
+    $("#myproduct").DataTable( {
+        "language": {
+            "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Hungarian.json"
+        }
+    } );
   });
 </script>
 </body>
