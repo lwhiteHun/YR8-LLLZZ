@@ -1,0 +1,4 @@
+/* a html kódban 9 section van, ezek a sorszámuk alapján lettek classozva(pl. .one, .two stb.)
+ezeken belül a div elemek úgy vannak elosztva, mint a tartalom méretaránya a megadott mintán
+tehát: .full (teljes szélesség), .half (fele szélesség), .one-third (egyharmad szélesség),
+.two-third (kétharmad szélesség) */
