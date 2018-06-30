@@ -2,3 +2,25 @@
 ezeken belül a div elemek úgy vannak elosztva, mint a tartalom méretaránya a megadott mintán
 tehát: .full (teljes szélesség), .half (fele szélesség), .one-third (egyharmad szélesség),
 .two-third (kétharmad szélesség) */
+
+@font-face {
+    font-family:  JosefinSans;
+    src: url(/fonts/JosefinSans-Regular.ttf)
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(/fonts/Nunito-Regular.ttf)
+}
+
+p, .menu-link {
+    font-family: Nunito, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+    font-family: JosefinSans, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
