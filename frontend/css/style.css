@@ -3,6 +3,10 @@ ezeken belül a div elemek úgy vannak elosztva, mint a tartalom méretaránya a
 tehát: .full (teljes szélesség), .half (fele szélesség), .one-third (egyharmad szélesség),
 .two-third (kétharmad szélesség) */
 
+body {
+    margin: 0px;
+}
+
 @font-face {
     font-family:  JosefinSans;
     src: url(/fonts/JosefinSans-Regular.ttf)
@@ -23,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 a:hover {
@@ -42,7 +46,15 @@ a:hover {
     font-size: 16px;
 }
 
+section.one {
+    background: linear-gradient(to left bottom, rgb(27, 128, 27), rgb(48, 204, 48));
+    color: antiquewhite;
+}
 
+.links {
+    text-align: right;
+    padding-right: 5em;
+}
 
 
 
@@ -143,18 +155,10 @@ a:hover {
 
 
 
-
-
-
-
-section.five>div.full {
-    background-color: rgba(94, 226, 182, 0.452);
+section.five {
     height: 200px;
-    background-image: url(/YR8-LLLZZ/frontend/img/s5.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-object-fit: cover;
-
-};
-
-section.five>div.
+    background-image: url(/img/s5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
