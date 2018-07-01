@@ -27,11 +27,18 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(233, 222, 190);
+    display: inline-block;     
+    position: relative;    
+    z-index: 1;
+    transition: all 0.2s linear;   
+    margin: 10px;
 }
 
 a:hover {
-    color: rgb(120, 189, 245);
+    color: aliceblue;
+    transition: all 0.2s linear;
+    -webkit-transform: scale(1.02);
         }
 
 .button-input, .download-button {
@@ -45,12 +52,15 @@ a:hover {
     display: inline-block;
     font-size: 16px;
     margin: 5px;
+    font-family: Nunito, sans-serif;
+    transition: all 0.2s linear;
 }
 
-section.one {
-    background: linear-gradient(to left bottom, rgb(27, 128, 27), rgb(48, 204, 48));
-    color: antiquewhite;
-    height: 75%;
+.one {
+    position: relative;
+    background: linear-gradient(to left bottom, rgb(0, 0, 0), rgb(18, 219, 11));
+    color: rgb(231, 217, 177);
+    height: 30em;
 }
 
 .links {
@@ -59,10 +69,14 @@ section.one {
 }
 
 .carpng {
-    bottom: auto;
+    position: absolute;
+    bottom: 0;
     float: left; 
-    width: 40%;
+    max-width: 40%;
     margin-left: 5em;
+    height: auto;
+    width: auto;
+    
 }
 
 h1 {
@@ -71,8 +85,12 @@ h1 {
 }
 
 .header {
-    width: 50%;
+    position: absolute;
+    max-width: 33.3%;
     margin-left: 50%;
+    bottom: 0;
+    height: auto;
+    width: auto;
 
 }
 
