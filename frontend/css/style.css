@@ -8,20 +8,26 @@ body {
 }
 
 @font-face {
-    font-family:  JosefinSans;
-    src: url(/fonts/JosefinSans-Regular.ttf)
+    font-family: JosefinSans;
+    src: url(/frontend/fonts/JosefinSans-Regular.ttf)
 }
 
 @font-face {
     font-family: Nunito;
-    src: url(/fonts/Nunito-Regular.ttf)
+    src: url(/frontend/fonts/Nunito-Regular.ttf)
 }
 
-p, .menu-link {
+p,
+.menu-link {
     font-family: Nunito, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 { 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: JosefinSans, sans-serif;
 }
 
@@ -31,17 +37,17 @@ a {
     color: rgb(255, 255, 255);
     padding: 5px;
     transition: all 0.1s linear;
-    
 }
 
 a:hover {
     color: rgb(120, 189, 245);
     transform: scale(1.05);
-        }
+}
 
-.button-input, .download-button {
+.button-input,
+.download-button {
     font-family: Nunito, sans-serif;
-    background-color: rgb(212, 190, 190);
+    background-color: rgb(199, 199, 199);
     border-radius: 16px;
     border: none;
     color: rgb(0, 0, 0);
@@ -64,11 +70,10 @@ section.one {
     padding-right: 5em;
 }
 
-
 .carpng {
     position: absolute;
     bottom: 0;
-    float: left; 
+    float: left;
     width: 40%;
     margin-left: 5em;
 }
@@ -86,6 +91,9 @@ h1 {
     max-width: 30em;
 }
 
+section.two {
+    background-color: rgb(255, 255, 255);
+}
 
 .container {
     position: relative;
@@ -93,7 +101,7 @@ h1 {
     padding-right: 20px;
     padding-top: 0px;
     padding-bottom: 20px;
-    max-width:100% ;
+    max-width: 100%;
     height: 15em;
     margin-left: 2em;
     margin-right: 2em;
@@ -102,7 +110,7 @@ h1 {
 .left {
     position: absolute;
     left: 50px;
-    top: 0;   
+    top: 0;
     max-width: 23.3%;
 }
 
@@ -120,132 +128,99 @@ h1 {
     margin: auto;
 }
 
-section.three {
-    margin-top: 1em;
-    
-}
-
 p.description {
-    margin:0;
+    margin: 0;
 }
 
 .section-title1 {
     text-align: center;
-    margin-top: 2em;
+    padding-top: 2em;
     margin-bottom: 5em;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-section.five {
-height: 200px;
-background-image: url(/img/s5.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-text-align: center; 
-object-fit: cover;
-font-style: italic;
-font-weight: bold;
-margin: 0;
+section.three {
+    background-color: #ebe8e8;
+    position: relative;
+    padding: 2em;
 }
 
-h3{
+.threecontainer {
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    max-width: 100%;
+    height: 15em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.threetext {
+    float: right;
+    max-width: 20em;
+    margin-right: 10em;
+}
+
+.road {
+    position: absolute;
+    float: left;
+    width: 30%;
+    margin-left: 5em;
+}
+
+section.four {
+    background-color: #ffffff;
+    position: relative;
+    padding: 2em;
+}
+
+.fourcontainer {
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    max-width: 100%;
+    height: 15em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.fourtext {
+    float: left;
+    max-width: 20em;
+    margin-left: 5em;
+    margin-right: 15em;
+}
+
+.salesman {
+    position: absolute;
+    float: right;
+    width: 30%;
+}
+
+/*idáig Zoli tákolta...igen, tudja, hogy szar*/
+
+/*innentől Lilla*/
+
+section.five {
+    height: 200px;
+    background-image: url(/img/s5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    object-fit: cover;
+    font-style: italic;
+    font-weight: bold;
+    margin: 0;
+}
+
+h3 {
     margin: 0;
 }
 
 .full5 {
-    
     box-sizing: border-box;
     position: relative;
     top: 30%;
@@ -253,17 +228,16 @@ h3{
     text-align: center;
     color: white;
     font-size: 20px;
-    
 }
+
 section.six {
     height: 200px;
-    background-color: rgba(203, 212, 204, 0.801);
+    background-color: #ebe8e8;
     position: relative;
     margin: 0 auto;
     text-align: center;
-   
-    
 }
+
 .full6 {
     box-sizing: border-box;
     position: relative;
@@ -271,8 +245,6 @@ section.six {
     bottom: 30%;
     text-align: center;
 }
-
-
 
 section.seven {
     box-sizing: border-box;
@@ -283,23 +255,21 @@ section.seven {
     text-align: center;
     transform: translate(-50%, 0);
     height: 280px;
-  }
-  
+}
 
 .half1 {
     text-align: center;
     float: left;
     width: 50%;
     height: 300px;
-
-
-    
 }
+
 .half2 {
     float: right;
-  width: 50%;
-  height: 250px;
+    width: 50%;
+    height: 250px;
 }
+
 .resize {
     width: 200px;
     height: 270px;
@@ -307,8 +277,7 @@ section.seven {
     margin: 5px;
 }
 
-
-section.eight{
+section.eight {
     font-family: Nunito, sans-serif;
     box-sizing: border-box;
     margin-top: 0em;
@@ -319,7 +288,7 @@ section.eight{
     top: 50%;
     left: 50%;
     text-align: center;
-   transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
 }
 
 #userMail {
@@ -328,25 +297,33 @@ section.eight{
     background: rgb(238, 233, 233);
 }
 
-#input8{
+#input8 {
     margin: 2em;
     color: black;
 }
 
 section.nine {
-box-sizing: border-box;
-margin-top: 0em;
-padding: 2em;
-width: auto;
-text-align: center;
+    box-sizing: border-box;
+    margin-top: 0em;
+    padding: 2em;
+    width: auto;
+    text-align: center;
 }
 
-#android, #ios{
-    
-    color:black;
+#android,
+#ios {
+    color: black;
 }
 
 .socialmedia9 {
     color: black;
     float: right;
+}
+
+.one-third {}
+
+.two-third {
+    position: relative;
+    width: calc(66.66%-10px);
+    float: left;
 }
