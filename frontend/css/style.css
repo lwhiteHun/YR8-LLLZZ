@@ -3,6 +3,7 @@ ezeken belül a div elemek úgy vannak elosztva, mint a tartalom méretaránya a
 tehát: .full (teljes szélesség), .half (fele szélesség), .one-third (egyharmad szélesség),
 .two-third (kétharmad szélesség) */
 
+
 body {
     margin: 0px;
 }
@@ -38,7 +39,7 @@ a {
 a:hover {
     color: aliceblue;
     transition: all 0.2s linear;
-    -webkit-transform: scale(1.02);
+    transform: scale(1.03);
         }
 
 .button-input, .download-button {
@@ -52,11 +53,12 @@ a:hover {
     display: inline-block;
     font-size: 16px;
     margin: 5px;
+    margin-bottom: 10px;
     font-family: Nunito, sans-serif;
     transition: all 0.2s linear;
 }
 
-.one {
+section.one {
     position: relative;
     background: linear-gradient(to left bottom, rgb(0, 0, 0), rgb(18, 219, 11));
     color: rgb(231, 217, 177);
@@ -86,7 +88,7 @@ h1 {
 
 .header {
     position: absolute;
-    max-width: 33.3%;
+    max-width: 30%;
     margin-left: 50%;
     bottom: 0;
     height: auto;
@@ -94,6 +96,18 @@ h1 {
 
 }
 
+
+.left {
+    max-width: 23.3%;
+}
+
+.right {
+    max-width: 23.3%;
+}
+
+.center {
+    max-width: 23.3%;
+}
 
 
 
