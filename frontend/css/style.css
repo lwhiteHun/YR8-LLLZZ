@@ -168,10 +168,35 @@ text-align: center;
 object-fit: cover;
 font-style: italic;
 font-weight: bold;
+margin: 0;
 
-};
+}
+h3{
+    margin: 0;
+}
+
+section.five>p {
+   vertical-align: middle;
+    
+}
 section.six {
-    height: 500px;
-    background-color: rgba(26, 245, 110, 0.918);
+    height: 200px;
+    background-color: rgba(31, 179, 63, 0.692);
+    text-align: center;
+    margin: 0;
+}
 
+section.seven {
+    width: 300px;
+}
+.half1 {
+    overflow: auto;
+}
+.resize {
+    width: 250px;
+    height: auto;
+    border-radius: 5%
+}
+.half2 {
+    float: right;
 }
