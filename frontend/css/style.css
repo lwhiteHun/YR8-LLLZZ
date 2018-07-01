@@ -44,11 +44,13 @@ a:hover {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    margin: 5px;
 }
 
 section.one {
     background: linear-gradient(to left bottom, rgb(27, 128, 27), rgb(48, 204, 48));
     color: antiquewhite;
+    height: 75%;
 }
 
 .links {
@@ -56,8 +58,23 @@ section.one {
     padding-right: 5em;
 }
 
+.carpng {
+    bottom: auto;
+    float: left; 
+    width: 40%;
+    margin-left: 5em;
+}
 
+h1 {
+    font-size: 5em;
+    margin-bottom: 20px;
+}
 
+.header {
+    width: 50%;
+    margin-left: 50%;
+
+}
 
 
 
