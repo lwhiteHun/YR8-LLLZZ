@@ -18,8 +18,8 @@ body {
 }
 
 p,
-.menu-link {
-    font-family: Nunito, sans-serif;
+.menu-link font-family: Nunito,
+sans-serif;
 }
 
 h1,
@@ -320,10 +320,106 @@ section.nine {
     float: right;
 }
 
-.one-third {}
-
-.two-third {
+section.contact {
     position: relative;
-    width: calc(66.66%-10px);
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Nunito, sans-serif;
+}
+
+.container-contact {
+    position: relative;
+}
+
+.third-one {
+    width: 33.33%;
     float: left;
+    transform-box: border-box;
+}
+
+.third-two {
+    width: 66.66%;
+    float: left;
+    text-align: left;
+}
+
+section.contact h3 {
+    text-align: left;
+    margin: 1em 10px;
+}
+
+.container-contact label,
+.container-contact input,
+.container-contact textarea {
+    width: calc(100% - 40px);
+    float: left;
+    margin: 0 10px 5px;
+    font-size: 13px;
+}
+
+.container-contact input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.container-contact textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-height: 200px;
+}
+
+.contact-submit {
+    font-family: Nunito, sans-serif;
+    background-color: #0c0;
+    border-radius: 16px;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2em;
+}
+
+.contact-submit:hover {
+    background-color: #090;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+footer {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.half {
+    position: relative;
+    width: calc(50% - 20px);
+    float: left;
+}
+
+.copyright {
+    font-family: Nunito, sans-serif;
+    color: #555;
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.padding8 {
+    padding-top: 8em;
 }
