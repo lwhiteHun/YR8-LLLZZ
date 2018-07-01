@@ -205,7 +205,7 @@ section.four {
 /*innentől Lilla*/
 
 section.five {
-    height: 200px;
+    <<<<<<< HEAD height: 200px;
     background-image: url(/img/s5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -217,7 +217,24 @@ section.five {
 }
 
 h3 {
+    =======height: 200px;
+    background-image: url(/frontend/img/s5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    object-fit: cover;
+    font-style: italic;
+    font-weight: 300;
     margin: 0;
+}
+
+.overlay {
+    height: 200px;
+    background-color: #024702a4
+}
+
+h3 {
+    >>>>>>>fc7944d2c6d21aa120fa4178ed0c2d23688c92d8 margin: 0;
 }
 
 .full5 {
@@ -226,7 +243,8 @@ h3 {
     top: 30%;
     bottom: 30%;
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
+    text-shadow: #000 0px 0px 5px;
     font-size: 20px;
 }
 
@@ -347,6 +365,9 @@ section.contact {
 section.contact h3 {
     text-align: left;
     margin: 1em 10px;
+    background: url();
+    font-style: normal;
+    font-weight: bold;
 }
 
 .container-contact label,
