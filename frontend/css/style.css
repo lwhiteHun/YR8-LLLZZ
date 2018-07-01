@@ -87,9 +87,6 @@ h1 {
     margin-right: 5em;
 }
 
-<<<<<<< HEAD
-
-=======
 .left {
     float: left;
     max-width: 23.3%;
@@ -108,7 +105,6 @@ section.three {
     margin-top: 1em;
     
 }
->>>>>>> 7691f7f5d54252a95671f21e573ade44aceccbc3
 
 
 
@@ -234,7 +230,7 @@ h3{
 }
 section.six {
     height: 200px;
-    background-color: rgba(65, 192, 86, 0.801);
+    background-color: rgba(192, 214, 195, 0.801);
     position: relative;
     margin: 0 auto;
     text-align: center;
@@ -285,8 +281,13 @@ section.seven {
 section.eight{
     box-sizing: border-box;
     width: 200px;
+    background: rgb(60, 214, 60);
     position: relative;
     text-align: center;
     margin : 0;
+
+}
+
+section.nine {
 
 }
