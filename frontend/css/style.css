@@ -230,7 +230,7 @@ h3{
 }
 section.six {
     height: 200px;
-    background-color: rgba(192, 214, 195, 0.801);
+    background-color: rgba(203, 212, 204, 0.801);
     position: relative;
     margin: 0 auto;
     text-align: center;
@@ -278,16 +278,25 @@ section.seven {
     margin: 5px;
 }
 
+
 section.eight{
     box-sizing: border-box;
-    width: 200px;
-    background: rgb(60, 214, 60);
+    margin-top: 0em;
+    padding: 2em;
+    width: auto;
+    background: rgb(43, 163, 43);
     position: relative;
+    top: 50%;
+    left: 50%;
     text-align: center;
-    margin : 0;
-
+   transform: translate(-50%, 0);
 }
 
-section.nine {
+#userMail {
+    border-radius: 5px;
+    width: 220px;
+}
 
+#input8{
+    margin: 2em;
 }
