@@ -3,7 +3,6 @@ ezeken belül a div elemek úgy vannak elosztva, mint a tartalom méretaránya a
 tehát: .full (teljes szélesség), .half (fele szélesség), .one-third (egyharmad szélesség),
 .two-third (kétharmad szélesség) */
 
-
 body {
     margin: 0px;
 }
@@ -28,18 +27,11 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
     text-decoration: none;
-    color: rgb(233, 222, 190);
-    display: inline-block;     
-    position: relative;    
-    z-index: 1;
-    transition: all 0.2s linear;   
-    margin: 10px;
+    color: rgb(255, 255, 255);
 }
 
 a:hover {
-    color: aliceblue;
-    transition: all 0.2s linear;
-    transform: scale(1.03);
+    color: rgb(120, 189, 245);
         }
 
 .button-input, .download-button {
@@ -53,16 +45,12 @@ a:hover {
     display: inline-block;
     font-size: 16px;
     margin: 5px;
-    margin-bottom: 10px;
-    font-family: Nunito, sans-serif;
-    transition: all 0.2s linear;
 }
 
 section.one {
-    position: relative;
-    background: linear-gradient(to left bottom, rgb(0, 0, 0), rgb(18, 219, 11));
-    color: rgb(231, 217, 177);
-    height: 30em;
+    background: linear-gradient(to left bottom, rgb(27, 128, 27), rgb(48, 204, 48));
+    color: antiquewhite;
+    height: 75%;
 }
 
 .links {
@@ -71,14 +59,10 @@ section.one {
 }
 
 .carpng {
-    position: absolute;
-    bottom: 0;
+    bottom: auto;
     float: left; 
-    max-width: 40%;
+    width: 40%;
     margin-left: 5em;
-    height: auto;
-    width: auto;
-    
 }
 
 h1 {
@@ -87,27 +71,11 @@ h1 {
 }
 
 .header {
-    position: absolute;
-    max-width: 30%;
+    width: 50%;
     margin-left: 50%;
-    bottom: 0;
-    height: auto;
-    width: auto;
 
 }
 
-
-.left {
-    max-width: 23.3%;
-}
-
-.right {
-    max-width: 23.3%;
-}
-
-.center {
-    max-width: 23.3%;
-}
 
 
 
@@ -209,8 +177,8 @@ h1 {
 
 
 section.five {
-    height: 200px;
-    background-image: url(/img/s5.jpg);
+height: 200px;
+background-image: url(/img/s5.jpg);
 background-repeat: no-repeat;
 background-size: cover;
 text-align: center; 
@@ -218,8 +186,8 @@ object-fit: cover;
 font-style: italic;
 font-weight: bold;
 margin: 0;
-
 }
+
 h3{
     margin: 0;
 }
@@ -250,43 +218,44 @@ section.six {
     text-align: center;
 }
 
+
+
 section.seven {
-    width: 100%;
     box-sizing: border-box;
-    transform: translate(-50%, -50%);
-}
-section.eight {
-
-}
-
-section.seven {
-    width: 400px;
+    width: 500px;
     position: relative;
     top: 50%;
     left: 50%;
     text-align: center;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0);
+    height: 250px;
   }
   
 
 .half1 {
+    text-align: center;
     float: left;
     width: 50%;
+    height: 250px;
+    
 }
 .half2 {
     float: right;
   width: 50%;
+  height: 250px;
 }
 .resize {
-    width: 150px;
-    height: 200px;
+    width: 200px;
+    height: 240px;
     border-radius: 5%;
     margin: 5px;
 }
 
 section.eight{
+    box-sizing: border-box;
     width: 200px;
     position: relative;
-    box-sizing: border-box;
     text-align: center;
+    margin : 0;
+
 }
