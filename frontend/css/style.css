@@ -282,7 +282,7 @@ section.seven {
     left: 50%;
     text-align: center;
     transform: translate(-50%, 0);
-    height: 250px;
+    height: 280px;
   }
   
 
@@ -290,7 +290,9 @@ section.seven {
     text-align: center;
     float: left;
     width: 50%;
-    height: 250px;
+    height: 300px;
+
+
     
 }
 .half2 {
@@ -300,7 +302,7 @@ section.seven {
 }
 .resize {
     width: 200px;
-    height: 240px;
+    height: 270px;
     border-radius: 5%;
     margin: 5px;
 }
