@@ -147,14 +147,15 @@ a:hover {
 
 
 
-section.five>div.full {
-    background-color: rgba(94, 226, 182, 0.452);
+section.five {
     height: 200px;
-    background-image: url(/YR8-LLLZZ/frontend/img/s5.jpg);
+    background-image: url(/img/s5.jpg);
 background-repeat: no-repeat;
 background-size: cover;
+text-align: center;
+vertical-align: middle;
 object-fit: cover;
+font-style: italic;
+font-weight: bold;
 
 };
-
-section.five>div.
