@@ -87,9 +87,6 @@ h1 {
     margin-right: 5em;
 }
 
-<<<<<<< HEAD
-
-=======
 .left {
     float: left;
     max-width: 23.3%;
@@ -108,7 +105,6 @@ section.three {
     margin-top: 1em;
     
 }
->>>>>>> 7691f7f5d54252a95671f21e573ade44aceccbc3
 
 
 
@@ -283,10 +279,12 @@ section.seven {
 }
 
 section.eight{
+    margin-top: 5em;
     box-sizing: border-box;
-    width: 200px;
+    width: auto;
     position: relative;
+    top: 50%;
+    left: 50%;
     text-align: center;
-    margin : 0;
-
+    transform: translate(-50%, 0);
 }
