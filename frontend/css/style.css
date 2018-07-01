@@ -1,0 +1,450 @@
+/* a html kódban 9 section van, ezek a sorszámuk alapján lettek classozva(pl. .one, .two stb.)
+ezeken belül a div elemek úgy vannak elosztva, mint a tartalom méretaránya a megadott mintán
+tehát: .full (teljes szélesség), .half (fele szélesség), .one-third (egyharmad szélesség),
+.two-third (kétharmad szélesség) */
+
+body {
+    margin: 0px;
+}
+
+@font-face {
+    font-family: JosefinSans;
+    src: url(/frontend/fonts/JosefinSans-Regular.ttf)
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(/frontend/fonts/Nunito-Regular.ttf)
+}
+
+p,
+.menu-link {
+    font-family: Nunito, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: JosefinSans, sans-serif;
+}
+
+a {
+    font-family: Nunito, sans-serif;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    transition: all 0.1s linear;
+}
+
+a:hover {
+    color: rgb(120, 189, 245);
+    transform: scale(1.05);
+}
+
+.button-input,
+.download-button {
+    font-family: Nunito, sans-serif;
+    background-color: rgb(199, 199, 199);
+    border-radius: 16px;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px;
+}
+
+section.one {
+    position: relative;
+    background: linear-gradient(to left bottom, rgb(0, 0, 0), rgb(48, 204, 48));
+    color: antiquewhite;
+}
+
+.links {
+    text-align: right;
+    padding-right: 5em;
+    font-size: 14px;
+}
+
+.carpng {
+    position: absolute;
+    bottom: 0;
+    float: left;
+    width: 40%;
+    margin-left: 5em;
+}
+
+h1 {
+    font-weight: 200;
+    font-size: 5em;
+    margin-bottom: 20px;
+    margin-top: 20px
+}
+
+.header {
+    width: 50%;
+    margin-left: 50%;
+    max-width: 30em;
+}
+
+section.two {
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    max-width: 100%;
+    height: 15em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.left {
+    position: absolute;
+    left: 50px;
+    top: 0;
+    max-width: 23.3%;
+}
+
+.right {
+    position: absolute;
+    right: 50px;
+    top: 0;
+    max-width: 23.3%;
+}
+
+.center {
+    position: relative;
+    float: none;
+    max-width: 23.3%;
+    margin: auto;
+}
+
+p.description {
+    margin: 0;
+}
+
+.section-title1 {
+    text-align: center;
+    padding-top: 2em;
+    margin-bottom: 5em;
+}
+
+section.three {
+    background-color: #ebe8e8;
+    position: relative;
+    padding: 2em;
+}
+
+.clickhere {
+    color: #000;
+    transition: all 0.1s linear;
+    font-weight: 600;
+}
+
+.threecontainer {
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    max-width: 100%;
+    height: 15em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.threetext {
+    float: right;
+    max-width: 20em;
+    margin-right: 10em;
+}
+
+.road {
+    position: absolute;
+    float: left;
+    width: 30%;
+    margin-left: 5em;
+}
+
+section.four {
+    background-color: #ffffff;
+    position: relative;
+    padding: 2em;
+}
+
+.fourcontainer {
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    max-width: 100%;
+    height: 15em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.fourtext {
+    float: left;
+    max-width: 20em;
+    margin-left: 5em;
+    margin-right: 15em;
+}
+
+.salesman {
+    position: absolute;
+    float: right;
+    width: 30%;
+}
+
+/*idáig Zoli tákolta...igen, tudja, hogy szar*/
+
+/*innentől Lilla*/
+
+section.five {
+    height: 200px;
+    background-image: url(/frontend/img/s5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    object-fit: cover;
+    font-style: italic;
+    font-weight: bold;
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+.overlay {
+    height: 200px;
+    background-color: #032c03b2
+}
+
+.full5 {
+    box-sizing: border-box;
+    position: relative;
+    top: 30%;
+    bottom: 30%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: #000 0px 0px 5px;
+    font-size: 20px;
+}
+
+section.six {
+    height: 200px;
+    background-color: #ebe8e8;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.full6 {
+    box-sizing: border-box;
+    position: relative;
+    top: 30%;
+    bottom: 30%;
+    text-align: center;
+}
+
+section.seven {
+    box-sizing: border-box;
+    width: 500px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, 0);
+    height: 280px;
+}
+
+.half1 {
+    text-align: center;
+    float: left;
+    width: 50%;
+    height: 300px;
+}
+
+.half2 {
+    float: right;
+    width: 50%;
+    height: 250px;
+}
+
+.resize {
+    width: 200px;
+    height: 270px;
+    border-radius: 5%;
+    margin: 5px;
+}
+
+section.eight {
+    color: #ffffff;
+    font-family: Nunito, sans-serif;
+    box-sizing: border-box;
+    margin-top: 0em;
+    padding: 2em;
+    width: auto;
+    background: rgb(16, 78, 16);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, 0);
+}
+
+#userMail {
+    padding: 8px 20px;
+    border-radius: 16px;
+    border: none;
+    width: 220px;
+    background: rgb(238, 233, 233);
+}
+
+#input8 {
+    margin: 2em;
+    color: black;
+    transition: all 0.1s linear;
+}
+
+#input8:hover {
+    color: rgb(120, 189, 245);
+    transform: scale(1.05);
+}
+
+section.nine {
+    box-sizing: border-box;
+    margin-top: 0em;
+    padding: 2em;
+    width: auto;
+    text-align: center;
+}
+
+#android,
+#ios {
+    color: black;
+}
+
+.socialmedia9 {
+    color: black;
+    float: right;
+}
+
+section.contact {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Nunito, sans-serif;
+}
+
+.container-contact {
+    position: relative;
+}
+
+.third-one {
+    width: calc(33.33% - 20px);
+    float: left;
+    margin-left: 20px;
+}
+
+.third-two {
+    width: calc(66.66% - 10px);
+    float: left;
+    text-align: left;
+}
+
+section.contact h3 {
+    text-align: left;
+    margin: 1em 10px;
+    background: url();
+    font-style: normal;
+    font-weight: bold;
+}
+
+.container-contact label,
+.container-contact input,
+.container-contact textarea {
+    width: calc(100% - 40px);
+    float: left;
+    margin: 0 10px 5px;
+    font-size: 13px;
+}
+
+.container-contact input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.container-contact textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-height: 200px;
+}
+
+.contact-submit {
+    font-family: Nunito, sans-serif;
+    background-color: #0c0;
+    border-radius: 16px;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2em;
+}
+
+.contact-submit:hover {
+    background-color: #090;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+footer {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.half {
+    position: relative;
+    width: calc(50% - 20px);
+    float: left;
+}
+
+.copyright {
+    font-family: Nunito, sans-serif;
+    color: #555;
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.contact-right {
+    padding-top: 8em;
+}
