@@ -86,7 +86,9 @@ h1 {
     max-width: 30em;
 }
 
-
+section.two {
+    background-color: rgb(255, 255, 255);
+}
 .container {
     position: relative;
     padding-left: 20px;
@@ -120,111 +122,84 @@ h1 {
     margin: auto;
 }
 
-section.three {
-    margin-top: 1em;
-    
-}
-
 p.description {
     margin:0;
 }
 
 .section-title1 {
     text-align: center;
-    margin-top: 2em;
+    padding-top: 2em;
     margin-bottom: 5em;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+section.three {
+    background-color: #ebe8e8;
+    position: relative;
+    padding: 2em;
+    }
+
+.threecontainer {
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    max-width:100% ;
+    height: 15em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.threetext {
+    float: right;
+    max-width: 20em;
+    margin-right: 10em;
+}
+
+.road {
+    position: absolute;
+    float: left; 
+    width: 30%;
+    margin-left:5em;
+}
+
+section.four {
+    background-color: #ffffff;
+    position: relative;
+    padding: 2em;
+}
+
+
+.fourcontainer {
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    max-width:100% ;
+    height: 15em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.fourtext {
+    float: left;
+    max-width: 20em;
+    margin-left: 5em;
+    margin-right: 15em;
+}
+
+
+.salesman {
+    position: absolute;
+    float: right; 
+    width: 30%;
+}
+
+
+/*idáig Zoli tákolta...igen, tudja, hogy szar*/
+
+/*innentől Lilla*/
 
 
 
@@ -257,7 +232,7 @@ h3{
 }
 section.six {
     height: 200px;
-    background-color: rgba(203, 212, 204, 0.801);
+    background-color: #ebe8e8;
     position: relative;
     margin: 0 auto;
     text-align: center;
@@ -350,3 +325,4 @@ text-align: center;
     color: black;
     float: right;
 }
+
