@@ -3,6 +3,7 @@ ezeken belül a div elemek úgy vannak elosztva, mint a tartalom méretaránya a
 tehát: .full (teljes szélesség), .half (fele szélesség), .one-third (egyharmad szélesség),
 .two-third (kétharmad szélesség) */
 
+
 body {
     margin: 0px;
 }
@@ -27,11 +28,18 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(233, 222, 190);
+    display: inline-block;     
+    position: relative;    
+    z-index: 1;
+    transition: all 0.2s linear;   
+    margin: 10px;
 }
 
 a:hover {
-    color: rgb(120, 189, 245);
+    color: aliceblue;
+    transition: all 0.2s linear;
+    transform: scale(1.03);
         }
 
 .button-input, .download-button {
@@ -45,12 +53,16 @@ a:hover {
     display: inline-block;
     font-size: 16px;
     margin: 5px;
+    margin-bottom: 10px;
+    font-family: Nunito, sans-serif;
+    transition: all 0.2s linear;
 }
 
 section.one {
-    background: linear-gradient(to left bottom, rgb(27, 128, 27), rgb(48, 204, 48));
-    color: antiquewhite;
-    height: 75%;
+    position: relative;
+    background: linear-gradient(to left bottom, rgb(0, 0, 0), rgb(18, 219, 11));
+    color: rgb(231, 217, 177);
+    height: 30em;
 }
 
 .links {
@@ -59,10 +71,14 @@ section.one {
 }
 
 .carpng {
-    bottom: auto;
+    position: absolute;
+    bottom: 0;
     float: left; 
-    width: 40%;
+    max-width: 40%;
     margin-left: 5em;
+    height: auto;
+    width: auto;
+    
 }
 
 h1 {
@@ -71,11 +87,27 @@ h1 {
 }
 
 .header {
-    width: 50%;
+    position: absolute;
+    max-width: 30%;
     margin-left: 50%;
+    bottom: 0;
+    height: auto;
+    width: auto;
 
 }
 
+
+.left {
+    max-width: 23.3%;
+}
+
+.right {
+    max-width: 23.3%;
+}
+
+.center {
+    max-width: 23.3%;
+}
 
 
 
