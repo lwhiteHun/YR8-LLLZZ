@@ -308,10 +308,24 @@ section.eight{
 }
 
 #userMail {
-    border-radius: 5px;
+    border-radius: 10px;
     width: 220px;
+    background: rgb(238, 233, 233);
 }
 
 #input8{
     margin: 2em;
+    color: black;
+}
+
+section.nine {
+box-sizing: border-box;
+margin-top: 0em;
+padding: 2em;
+width: auto;
+text-align: center;
+}
+
+#android, #ios{
+    color:black;
 }
