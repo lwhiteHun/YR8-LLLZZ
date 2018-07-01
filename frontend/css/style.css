@@ -145,6 +145,12 @@ section.three {
     padding: 2em;
 }
 
+.clickhere {
+    color: #000;
+    transition: all 0.1s linear;
+    font-weight: 600;
+}
+
 .threecontainer {
     position: relative;
     padding-left: 20px;
@@ -223,7 +229,7 @@ h3 {
 
 .overlay {
     height: 200px;
-    background-color: #024702a4
+    background-color: #032c03b2
 }
 
 .full5 {
@@ -285,12 +291,13 @@ section.seven {
 }
 
 section.eight {
+    color: #ffffff;
     font-family: Nunito, sans-serif;
     box-sizing: border-box;
     margin-top: 0em;
     padding: 2em;
     width: auto;
-    background: rgb(43, 163, 43);
+    background: rgb(16, 78, 16);
     position: relative;
     top: 50%;
     left: 50%;
@@ -299,7 +306,9 @@ section.eight {
 }
 
 #userMail {
-    border-radius: 10px;
+    padding: 8px 20px;
+    border-radius: 16px;
+    border: none;
     width: 220px;
     background: rgb(238, 233, 233);
 }
@@ -307,6 +316,12 @@ section.eight {
 #input8 {
     margin: 2em;
     color: black;
+    transition: all 0.1s linear;
+}
+
+#input8:hover {
+    color: rgb(120, 189, 245);
+    transform: scale(1.05);
 }
 
 section.nine {
