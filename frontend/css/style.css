@@ -245,12 +245,14 @@ h3{
 }
 
 .full5 {
+    
     box-sizing: border-box;
     position: relative;
     top: 30%;
     bottom: 30%;
     text-align: center;
     color: white;
+    font-size: 20px;
     
 }
 section.six {
@@ -340,4 +342,9 @@ text-align: center;
 #android, #ios{
     
     color:black;
+}
+
+.socialmedia9 {
+    color: black;
+    float: right;
 }
