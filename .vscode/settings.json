@@ -1,4 +1,9 @@
 {
+<<<<<<< HEAD
+    "liveServer.settings.donotVerifyTags": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "editor.formatOnSave": true
+=======
     "liveServer.settings.port": 0,
     "liveServer.settings.root": "/src",
     "liveServer.settings.CustomBrowser": "chrome",
@@ -9,4 +14,5 @@
         "**/*.scss",
         "**/*.sass"
     ]
+>>>>>>> fc7944d2c6d21aa120fa4178ed0c2d23688c92d8
 }
