@@ -18,8 +18,8 @@ body {
 }
 
 p,
-.menu-link font-family: Nunito,
-sans-serif;
+.menu-link {
+    font-family: Nunito, sans-serif;
 }
 
 h1,
