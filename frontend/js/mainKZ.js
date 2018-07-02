@@ -28,59 +28,58 @@ var arr = [
 
 
 function soldMost() {
-    soldlist = []
-    for (i in arr) {
-        soldlist.push(arr[i].sold)
+    var soldlist = [];
+    for (var i in arr) {
+        soldlist.push(arr[i].sold);
     }
-    name = ""
-    max = soldlist[0]
-    for (i in soldlist) {
+    var name = "";
+    var max = soldlist[0];
+    for (var i in soldlist) {
         if (soldlist[i] > max) {
-            max = soldlist[i]
-            name = arr[i].name
+            max = soldlist[i];
+            name = arr[i].name;
         }
     }
-    console.log(name)
+    console.log(name);
 }
 soldMost()
 
 
 function newestProduct() {
-    productList = []
-    for (i in arr) {
-        var q = Date.parse(arr[i].createdAt)
-        productList.push(q)
+    var productList = [];
+    for (var i in arr) {
+        var q = Date.parse(arr[i].createdAt);
+        productList.push(q);
     }
     console.log(productList)
-    name = ""
-    max = productList[0]
-    for (i in productList) {
+    var name = "";
+    var max = productList[0];
+    for (var i in productList) {
         if (productList[i] > max) {
-            max = productList[i]
-            name = arr[i].name
+            max = productList[i];
+            name = arr[i].name;
         }
     }
-    console.log(name)
+    console.log(name);
 }
 newestProduct()
 
 
 function sumOfPrizes() {
-    sum = 0
-    for (i in arr) {
-        sum += arr[i].price
+    var sum = 0;
+    for (var i in arr) {
+        sum += arr[i].price;
     }
     console.log(sum)
-    return sum
 }
 sumOfPrizes()
 
 
 function avgOfPrizes() {
-    sum = 0
-    for (i in arr) {
-        sum += arr[i].price
+    var sum = 0;
+    for (var i in arr) {
+        sum += arr[i].price;
     }
-    console.log(sum / arr.length)
+    console.log(sum / arr.length);
 }
 avgOfPrize()
