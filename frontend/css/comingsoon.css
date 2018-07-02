@@ -46,5 +46,16 @@ h2{
     font-family: JosefinSans, sans-serif;
     text-align: center;
     color: white;
+}
 
+.backto, .home {
+    font-family: JosefinSans, sans-serif;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    
+}
+
+.backto:hover {
+    color: rgb(120, 189, 245);
 }
