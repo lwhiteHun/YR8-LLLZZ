@@ -1,33 +1,50 @@
-body, html {
-    height: 100%;
+@font-face {
+    font-family: JosefinSans;
+    src: url(/frontend/fonts/JosefinSans-Regular.ttf)
 }
 
-.bg { 
-    background-image: url("/frontend/img/comingsoon.jpg");
-    height: 100%; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.9;
+html {
+    min-width: 100%;
+    width: fit-content;
+    max-height: 100vh;
+
 }
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url("/frontend/img/comingsoon.jpg") no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    width: fit-content;
+    max-height: 100vh;
+}
+.overlay {
+    margin: 0;
+    background: #004400af;
+    background-size: cover;
+    min-width: 100%;
+    width: fit-content;
+    min-height: 100vh;
+    max-block-size: 100vh;
+
+}
+
+
 h1{
-    height: 70px;
-    width: 1500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    margin: 0%;
+    padding-top: 5em;
     text-align: center;
     font-size : 4em;
     color: white;
     font-family: JosefinSans, sans-serif;
 
+
 }
 h2{
     font-family: JosefinSans, sans-serif;
-    width: 1500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     text-align: center;
     color: white;
+
 }
