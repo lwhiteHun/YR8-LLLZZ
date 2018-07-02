@@ -1,0 +1,18 @@
+h1{
+    width: 800px;
+    text-align: center;
+    font-size : 4em;
+    font-family: JosefinSans, sans-serif;
+
+}
+h2,.home{
+    font-family: JosefinSans, sans-serif;
+    height: 900;
+    width: 800px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+body, html {
+    height: 100%;
+}

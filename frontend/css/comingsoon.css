@@ -1,0 +1,33 @@
+body, html {
+    height: 100%;
+}
+
+.bg { 
+    background-image: url("/frontend/img/comingsoon.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+}
+h1{
+    height: 70px;
+    width: 1500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size : 4em;
+    color: white;
+    font-family: JosefinSans, sans-serif;
+
+}
+h2{
+    font-family: JosefinSans, sans-serif;
+    width: 1500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
